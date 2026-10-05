@@ -747,6 +747,14 @@
 		}
 	}
 
+/* Small text (e.g. key papers) */
+
+	small {
+		display: block;
+		font-size: 0.8em;
+		line-height: 1.6;
+	}
+
 /* Contact list */
 
 	ul.feature-icons.contact-list li:last-child {

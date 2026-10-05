@@ -4,7 +4,7 @@
 - **2018–2020**: Postdoc, Institute for Computational Science, University of Zurich, group led by Lucio Mayer
 - **2015–2018**: PhD, INAF-Osservatorio Astronomico di Padova, supervisor Michela Mapelli
 - **2015**: MSc in Astrophysics and Space Physics, University of Milano-Bicocca, supervisors Massimo Dotti and Alessia Gualandris
-- **2013**: BSc in Physics, University of Milano-Bicocca
+- **2013**: BSc in Physics, University of Milano-Bicocca, supervisor Massimo Dotti
 
 <details markdown="1">
 <summary>Read more</summary>
