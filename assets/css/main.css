@@ -1785,7 +1785,7 @@ input, select, textarea {
 	}
 
 	header.major h2 {
-		color: #4acaa8;
+		color: #ea8470;
 		font-size: 3.5em;
 	}
 
@@ -2206,6 +2206,53 @@ input, select, textarea {
 
 			.image.main img {
 				border-radius: 0;
+			}
+
+/* Details (Read more) */
+
+	details {
+		margin: 0 0 2em 0;
+	}
+
+		details:last-child {
+			margin-bottom: 0;
+		}
+
+		details > summary {
+			color: #4acaa8;
+			cursor: pointer;
+			display: inline-block;
+			font-weight: 700;
+			list-style: none;
+		}
+
+			details > summary::-webkit-details-marker {
+				display: none;
+			}
+
+			details > summary:after {
+				content: '\25B8';
+				display: inline-block;
+				margin-left: 0.4em;
+				-moz-transition: -moz-transform 0.2s ease;
+				-webkit-transition: -webkit-transform 0.2s ease;
+				-ms-transition: -ms-transform 0.2s ease;
+				transition: transform 0.2s ease;
+			}
+
+			details > summary:hover {
+				opacity: 0.8;
+			}
+
+		details[open] > summary {
+			margin-bottom: 1em;
+		}
+
+			details[open] > summary:after {
+				-moz-transform: rotate(90deg);
+				-webkit-transform: rotate(90deg);
+				-ms-transform: rotate(90deg);
+				transform: rotate(90deg);
 			}
 
 /* List */
@@ -2829,7 +2876,7 @@ input, select, textarea {
 	}
 
 		#main > section > .container {
-			padding: 6em 0 4em 0;
+			padding: 4em 0 4em 0;
 		}
 
 		#main > section:first-child {
@@ -3211,6 +3258,10 @@ input, select, textarea {
 			#main > section > .container {
 				padding: 2em 0 0 0;
 			}
+
+				#main > section > .container > details:last-child {
+					margin-bottom: 2em;
+				}
 
 		/* Footer */
 

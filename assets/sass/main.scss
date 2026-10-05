@@ -360,7 +360,7 @@
 
 		&.major {
 			h2 {
-				color: _palette(accent1, bg);
+				color: _palette(highlight);
 				font-size: 3.5em;
 
 				& + p {
@@ -746,6 +746,47 @@
 			}
 		}
 	}
+
+/* Details (Read more) */
+
+	details {
+		margin: 0 0 2em 0;
+	}
+
+		details:last-child {
+			margin-bottom: 0;
+		}
+
+		details > summary {
+			color: _palette(accent1, bg);
+			cursor: pointer;
+			display: inline-block;
+			font-weight: _font(weight-bold);
+			list-style: none;
+		}
+
+			details > summary::-webkit-details-marker {
+				display: none;
+			}
+
+			details > summary:after {
+				content: '\25B8';
+				display: inline-block;
+				margin-left: 0.4em;
+				@include vendor('transition', 'transform 0.2s ease');
+			}
+
+			details > summary:hover {
+				opacity: 0.8;
+			}
+
+		details[open] > summary {
+			margin-bottom: 1em;
+		}
+
+			details[open] > summary:after {
+				@include vendor('transform', 'rotate(90deg)');
+			}
 
 /* List */
 
@@ -1285,7 +1326,7 @@
 			border-top: solid (_size(border-width) * 3) _palette(border);
 
 			> .container {
-				padding: 6em 0 4em 0;
+				padding: 4em 0 4em 0;
 			}
 
 			&:first-child {
@@ -1703,6 +1744,10 @@
 				> section {
 					> .container {
 						padding: 2em 0 0 0;
+
+						> details:last-child {
+							margin-bottom: 2em;
+						}
 					}
 				}
 			}
