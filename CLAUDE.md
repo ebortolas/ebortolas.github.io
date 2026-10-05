@@ -30,6 +30,6 @@ No package manager, linter or tests. GitHub Pages builds the site with Jekyll, a
 
 ## Search engines
 
-- The `<head>` of `index.html` has the meta description (keep it ≤ ~155 characters and in sync with `description` in `_config.yml`), canonical URL, Open Graph/Twitter tags (preview image `images/og-image.jpg`, 1200×630, cropped from the banner) and a schema.org `Person` JSON-LD block (affiliation, `sameAs` ORCID/GitHub). Update the JSON-LD when affiliation or profiles change.
+- The `<head>` of `index.html` has the meta description (keep it ≤ ~155 characters and in sync with `description` in `_config.yml`, where the value must stay in double quotes: an unquoted `: ` breaks the YAML and the GitHub Pages build), canonical URL, Open Graph/Twitter tags (preview image `images/og-image.jpg`, 1200×630, cropped from the banner) and a schema.org `Person` JSON-LD block (affiliation, `sameAs` ORCID/GitHub). Update the JSON-LD when affiliation or profiles change.
 - `robots.txt` and a static `sitemap.xml` (home page + CV PDF) sit at the repo root. Add new pages to the sitemap by hand.
 - Google Search Console / Bing Webmaster Tools verification is done by Elisa with her accounts; a verification `<meta>` tag goes in the `<head>`.

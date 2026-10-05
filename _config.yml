@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
-title: Elisa Bortolas, astrophysicist
-description: Elisa Bortolas, astrophysicist at INAF-Osservatorio Astronomico di Padova: massive black holes, gravitational-wave sources for LISA, tidal disruption events.
+title: "Elisa Bortolas, astrophysicist"
+description: "Elisa Bortolas, astrophysicist at INAF-Osservatorio Astronomico di Padova: massive black holes, gravitational-wave sources for LISA, tidal disruption events."
 url: https://ebortolas.github.io
 
 # Files that are not part of the site (GitHub Pages renders every .md file otherwise)
