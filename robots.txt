@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ebortolas.github.io/sitemap.xml

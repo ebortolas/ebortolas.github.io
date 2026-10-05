@@ -26,4 +26,10 @@ No package manager, linter or tests. GitHub Pages builds the site with Jekyll, a
 - `#four` ("Contact Me", nav label "Contact") shows email, phone and postal address from `_includes/contact.md`, as a `ul.feature-icons.contact-list` (same icon style as the CV section; the last item, the address, is full width). The template's contact form was removed.
 - `#three` ("Research highlights", nav label "Research") comes from `_includes/research.md`: the template's `.features` cards (figure + title + short text + `<small>` key papers linked to arXiv), then a generic "Current and future directions" paragraph. Card figures are `images/research-*.jpg` (1000×625): binaries = crop of Elisa's z~6 simulation figure, TDE = ESO/M. Kornmesser eso2018a (CC BY 4.0), EMRI = NASA (public domain); credits are in the page footer. Elisa's preferences for this text: no "Read more" dropdowns, no acronyms except mission/facility names (LISA, LSST-Rubin, ELT, EPTA in citations), keep future plans vague.
 - `#five` (the template's "Elements" demo of every styled component) is commented out and not in the nav. The commented-out block is a useful reference for the template's available CSS classes (buttons, tables, grids, image styles).
-- Sidebar footer icons link to GitHub (github.com/ebortolas) and ORCID. The page footer still says "© Untitled".
+- Sidebar footer icons link to GitHub (github.com/ebortolas) and ORCID. The page footer says "© Elisa Bortolas" plus template and image credits.
+
+## Search engines
+
+- The `<head>` of `index.html` has the meta description (keep it ≤ ~155 characters and in sync with `description` in `_config.yml`), canonical URL, Open Graph/Twitter tags (preview image `images/og-image.jpg`, 1200×630, cropped from the banner) and a schema.org `Person` JSON-LD block (affiliation, `sameAs` ORCID/GitHub). Update the JSON-LD when affiliation or profiles change.
+- `robots.txt` and a static `sitemap.xml` (home page + CV PDF) sit at the repo root. Add new pages to the sitemap by hand.
+- Google Search Console / Bing Webmaster Tools verification is done by Elisa with her accounts; a verification `<meta>` tag goes in the `<head>`.

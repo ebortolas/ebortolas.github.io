@@ -1,6 +1,7 @@
 theme: jekyll-theme-minimal
-title: Octocat's homepage
-description: Bookmark this to keep an eye on my project updates!
+title: Elisa Bortolas, astrophysicist
+description: Elisa Bortolas, astrophysicist at INAF-Osservatorio Astronomico di Padova: massive black holes, gravitational-wave sources for LISA, tidal disruption events.
+url: https://ebortolas.github.io
 
 # Files that are not part of the site (GitHub Pages renders every .md file otherwise)
 exclude:
