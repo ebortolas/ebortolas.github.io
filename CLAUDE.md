@@ -16,7 +16,8 @@ No package manager, linter or tests. GitHub Pages builds the site with Jekyll, a
 - `assets/css/main.css` is the stylesheet the page loads. It's compiled from `assets/sass/main.scss` (plus `assets/sass/libs/`), but the repo has no Sass toolchain. If you edit the SCSS, recompile it yourself with `npx sass@1.69.5 --no-source-map assets/sass/main.scss assets/css/main.css` (newer sass needs a newer Node than the installed v18). Note that the full recompile reformats the whole file, so for small changes it's simpler to edit both the SCSS and `main.css` by hand.
 - `assets/js/*` and `assets/webfonts/*` are vendored template files (jQuery, scrollex, scrolly, breakpoints, Font Awesome). Don't modify them.
 - `images/` contains `avatar.jpg` (sidebar), `banner.jpg` (top of `#one`) and `pic01–03.jpg` (the `#three` feature cards). The page refers to these filenames directly, so if you replace an image, keep its name or update the `src` in `index.html`.
-- `_config.yml` is a leftover GitHub Pages theme config with default values (`jekyll-theme-minimal`, "Octocat's homepage"). `layout: null` in `index.html` keeps that theme from wrapping the page.
+- GitHub Pages builds with Jekyll 3.10 plus the `github-pages` plugins, unlike the local Jekyll 4. One difference matters: `jekyll-optional-front-matter` renders **every** `.md` file in the repo as a page, so a file with Liquid-looking text (`{{`, `{%`) breaks the whole build. Files that aren't part of the site go in `exclude:` in `_config.yml` (this file is excluded for that reason). `_includes/` is safe.
+- `_config.yml` is a leftover GitHub Pages theme config with default values (`jekyll-theme-minimal`, "Octocat's homepage") plus the `exclude:` list. `layout: null` in `index.html` keeps that theme from wrapping the page.
 - `README.txt` is the original HTML5 UP template readme.
 
 ## Current state of the content
