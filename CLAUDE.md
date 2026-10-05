@@ -25,4 +25,4 @@ No package manager, linter or tests. GitHub Pages builds the site with Jekyll, a
 - Real content: the sidebar, `#one` (About) and `#two` (Bio), whose text lives in `_includes/`.
 - Still template placeholder text (lorem ipsum, demo titles): `#three` ("A Few Accomplishments", nav label "Research") and `#four` ("Contact Me", nav label "More"). The form in `#four` has `action="#"` and sends nothing. The template readme suggests formspree.io.
 - `#five` (the template's "Elements" demo of every styled component) is commented out, but the nav still links to `#five` as "Contact". The commented-out block is a useful reference for the template's available CSS classes (buttons, tables, grids, image styles).
-- Sidebar social icons have `href="#"`, and the footer still says "© Untitled".
+- Sidebar footer icons link to GitHub (github.com/ebortolas) and ORCID. The page footer still says "© Untitled".
