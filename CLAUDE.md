@@ -23,7 +23,7 @@ No package manager, linter or tests. GitHub Pages builds the site with Jekyll, a
 ## Current state of the content
 
 - Real content: the sidebar, `#one` (About) and `#two` (Bio), whose text lives in `_includes/`.
-- `#four` ("Contact Me", nav label "Contact") shows email, postal address and phone from `_includes/contact.md`. The template's contact form was removed.
+- `#four` ("Contact Me", nav label "Contact") shows email, phone and postal address from `_includes/contact.md`, as a `ul.feature-icons.contact-list` (same icon style as the CV section; the last item, the address, is full width). The template's contact form was removed.
 - Still template placeholder text (lorem ipsum, demo titles): `#three` ("A Few Accomplishments", nav label "Research").
 - `#five` (the template's "Elements" demo of every styled component) is commented out and not in the nav. The commented-out block is a useful reference for the template's available CSS classes (buttons, tables, grids, image styles).
 - Sidebar footer icons link to GitHub (github.com/ebortolas) and ORCID. The page footer still says "© Untitled".
