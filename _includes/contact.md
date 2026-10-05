@@ -1,5 +1,7 @@
-You can contact me via email at [elisa.bortolas@inaf.it](mailto:elisa.bortolas@inaf.it).
+You can contact me via  [email](mailto:elisa.bortolas@inaf.it).
 
+My full address is:<br>
+Elisa Bortolas<br>
 **INAF-Osservatorio Astronomico di Padova**<br>
 Vicolo dell'Osservatorio 5<br>
 I-35122 Padova (PD)<br>
