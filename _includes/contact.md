@@ -1,4 +1,4 @@
-Feel free to get in touch.
+Science is better together — feel free to reach out about research, collaborations, or anything else on your mind.
 
 <ul class="feature-icons contact-list">
 <li class="icon solid fa-envelope"><a href="mailto:elisa.bortolas@inaf.it">Send me an email</a></li>
